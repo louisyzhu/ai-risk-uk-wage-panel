@@ -1,0 +1,280 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}/Users/looloo/Desktop/master folder/output/empirical_log.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}24 May 2025, 19:52:40
+{txt}
+{com}. 
+. *-----------------------------------------------------------------
+. * 1. Build occupation-year wage panel
+. *-----------------------------------------------------------------
+. tempfile wages
+{txt}
+{com}. save `wages', emptyok
+{txt}(dataset contains 0 observations)
+{p 0 4 2}
+file {bf}
+/var/folders/8g/x3dsynzs48dd759mf0c_n0th0000gn/T//S_69201.000001{rm}
+saved
+as .dta format
+{p_end}
+
+{com}. 
+. local years 2014/2023
+{txt}
+{com}. foreach y of numlist `years' {c -(}
+{txt}  2{com}. 
+.     import excel using "ashe_`y'.xls", ///
+>         sheet("All") firstrow cellrange(A5:F500) clear   // header row 5
+{txt}  3{com}. 
+.     keep Code Mean                       // two columns we need
+{txt}  4{com}.     rename (Code Mean) (soc wage)
+{txt}  5{com}. 
+.     destring soc,  replace
+{txt}  6{com}.     destring wage, replace ignore("x")
+{txt}  7{com}.     drop if missing(soc) | missing(wage)
+{txt}  8{com}. 
+.     gen year  = `y'
+{txt}  9{com}.     gen lnwage = ln(wage)
+{txt} 10{com}. 
+.     append using `wages'
+{txt} 11{com}.     save `wages', replace
+{txt} 12{com}. {c )-}
+{res}{text}(6 vars, 495 obs)
+{res}{txt}soc: all characters numeric; {res}replaced {txt}as {res}int
+{txt}(2 missing values generated)
+{res}{txt}wage: character{res} x{txt} removed; {res}replaced {txt}as {res}double
+{txt}(7 missing values generated)
+{res}{txt}(8 observations deleted)
+{p 0 4 2}
+file {bf}
+/var/folders/8g/x3dsynzs48dd759mf0c_n0th0000gn/T//S_69201.000001{rm}
+saved
+as .dta format
+{p_end}
+{res}{text}(6 vars, 495 obs)
+{res}{txt}soc: all characters numeric; {res}replaced {txt}as {res}int
+{txt}(2 missing values generated)
+{res}{txt}wage: character{res} x{txt} removed; {res}replaced {txt}as {res}double
+{txt}(6 missing values generated)
+{res}{txt}(7 observations deleted)
+{p 0 4 2}
+file {bf}
+/var/folders/8g/x3dsynzs48dd759mf0c_n0th0000gn/T//S_69201.000001{rm}
+saved
+as .dta format
+{p_end}
+{res}{text}(6 vars, 495 obs)
+{res}{txt}soc: all characters numeric; {res}replaced {txt}as {res}int
+{txt}(2 missing values generated)
+{res}{txt}wage: character{res} x{txt} removed; {res}replaced {txt}as {res}double
+{txt}(6 missing values generated)
+{res}{txt}(7 observations deleted)
+{p 0 4 2}
+file {bf}
+/var/folders/8g/x3dsynzs48dd759mf0c_n0th0000gn/T//S_69201.000001{rm}
+saved
+as .dta format
+{p_end}
+{res}{text}(6 vars, 495 obs)
+{res}{txt}soc: all characters numeric; {res}replaced {txt}as {res}int
+{txt}(2 missing values generated)
+{res}{txt}wage: character{res} x{txt} removed; {res}replaced {txt}as {res}double
+{txt}(8 missing values generated)
+{res}{txt}(9 observations deleted)
+{p 0 4 2}
+file {bf}
+/var/folders/8g/x3dsynzs48dd759mf0c_n0th0000gn/T//S_69201.000001{rm}
+saved
+as .dta format
+{p_end}
+{res}{text}(6 vars, 495 obs)
+{res}{txt}soc: all characters numeric; {res}replaced {txt}as {res}int
+{txt}(2 missing values generated)
+{res}{txt}wage: character{res} x{txt} removed; {res}replaced {txt}as {res}double
+{txt}(7 missing values generated)
+{res}{txt}(8 observations deleted)
+{p 0 4 2}
+file {bf}
+/var/folders/8g/x3dsynzs48dd759mf0c_n0th0000gn/T//S_69201.000001{rm}
+saved
+as .dta format
+{p_end}
+{res}{text}(6 vars, 495 obs)
+{res}{txt}soc: all characters numeric; {res}replaced {txt}as {res}int
+{txt}(2 missing values generated)
+{res}{txt}wage: character{res} x{txt} removed; {res}replaced {txt}as {res}double
+{txt}(7 missing values generated)
+{res}{txt}(8 observations deleted)
+{p 0 4 2}
+file {bf}
+/var/folders/8g/x3dsynzs48dd759mf0c_n0th0000gn/T//S_69201.000001{rm}
+saved
+as .dta format
+{p_end}
+{res}{text}(6 vars, 495 obs)
+{res}{txt}soc: all characters numeric; {res}replaced {txt}as {res}int
+{txt}(2 missing values generated)
+{res}{txt}wage: character{res} x{txt} removed; {res}replaced {txt}as {res}double
+{txt}(10 missing values generated)
+{res}{txt}(11 observations deleted)
+{p 0 4 2}
+file {bf}
+/var/folders/8g/x3dsynzs48dd759mf0c_n0th0000gn/T//S_69201.000001{rm}
+saved
+as .dta format
+{p_end}
+{res}{text}(6 vars, 495 obs)
+{res}{txt}soc: all characters numeric; {res}replaced {txt}as {res}int
+{txt}(1 missing value generated)
+{res}{txt}wage: character{res} x{txt} removed; {res}replaced {txt}as {res}double
+{txt}(9 missing values generated)
+{res}{txt}(10 observations deleted)
+{p 0 4 2}
+file {bf}
+/var/folders/8g/x3dsynzs48dd759mf0c_n0th0000gn/T//S_69201.000001{rm}
+saved
+as .dta format
+{p_end}
+{res}{text}(6 vars, 495 obs)
+{res}{txt}soc: all characters numeric; {res}replaced {txt}as {res}int
+{txt}(1 missing value generated)
+{res}{txt}wage: character{res} x{txt} removed; {res}replaced {txt}as {res}double
+{txt}(5 missing values generated)
+{res}{txt}(6 observations deleted)
+{p 0 4 2}
+file {bf}
+/var/folders/8g/x3dsynzs48dd759mf0c_n0th0000gn/T//S_69201.000001{rm}
+saved
+as .dta format
+{p_end}
+{res}{text}(6 vars, 495 obs)
+{res}{txt}soc: all characters numeric; {res}replaced {txt}as {res}int
+{txt}(1 missing value generated)
+{res}{txt}wage: character{res} x{txt} removed; {res}replaced {txt}as {res}double
+{txt}(6 missing values generated)
+{res}{txt}(7 observations deleted)
+{p 0 4 2}
+file {bf}
+/var/folders/8g/x3dsynzs48dd759mf0c_n0th0000gn/T//S_69201.000001{rm}
+saved
+as .dta format
+{p_end}
+
+{com}. 
+. *-----------------------------------------------------------------
+. * 2. Merge automation-risk scores  (final, tested names)
+. *-----------------------------------------------------------------
+. import excel using "Automation risk by occupation.xlsx", ///
+>        sheet("Sheet1") firstrow clear
+{res}{text}(4 vars, 369 obs)
+
+{com}. rename _all, lower
+{res}{txt}
+{com}. 
+. keep soc2010 probabilityofautomation
+{txt}
+{com}. rename (soc2010 probabilityofautomation) (soc risk)
+{res}{txt}
+{com}. destring soc, replace
+{txt}soc already numeric; no {res}replace
+{txt}
+{com}. 
+. merge 1:m soc using `wages', keep(match) nogen
+{res}
+{txt}{col 5}Result{col 33}Number of obs
+{col 5}{hline 41}
+{col 5}Not matched{col 30}{res}               0
+{txt}{col 5}Matched{col 30}{res}           3,255{txt}  
+{col 5}{hline 41}
+
+{com}. save "data_work/panel.dta", replace
+{txt}{p 0 4 2}
+(file {bf}
+data_work/panel.dta{rm}
+not found)
+{p_end}
+{p 0 4 2}
+file {bf}
+data_work/panel.dta{rm}
+saved
+{p_end}
+
+{com}. 
+. 
+. *-----------------------------------------------------------------
+. * 3. Fixed-effects regression
+. *-----------------------------------------------------------------
+. xtset soc year
+{res}
+{col 1}{txt:Panel variable: }{res:soc}{txt: (unbalanced)}
+{p 1 16 2}{txt:Time variable: }{res:year}{txt:, }{res:{bind:2014}}{txt: to }{res:{bind:2023}}{txt:, but with gaps}{p_end}
+{txt}{col 10}Delta: {res}1 unit
+{txt}
+{com}. gen post2016 = year >= 2016
+{txt}
+{com}. xtreg lnwage c.risk##i.post2016 i.year, fe cluster(soc)
+{txt}{p 0 6 2}note: {bf:risk} omitted because of collinearity.{p_end}
+{p 0 6 2}note: {bf:2023.year} omitted because of collinearity.{p_end}
+{res}
+{txt}Fixed-effects (within) regression{col 49}Number of obs{col 67}={col 69}{res}     3,255
+{txt}Group variable: {res}soc{txt}{col 49}Number of groups{col 67}={col 69}{res}       367
+
+{txt}R-squared:{col 49}Obs per group:
+     Within  = {res}0.3676{col 63}{txt}min{col 67}={col 69}{res}         3
+{txt}     Between = {res}0.3112{col 63}{txt}avg{col 67}={col 69}{res}       8.9
+{txt}     Overall = {res}0.0049{col 63}{txt}max{col 67}={col 69}{res}        10
+
+{txt}{col 49}F({res}10{txt}, {res}366{txt}){col 67}={col 70}{res}   137.41
+{txt}corr(u_i, Xb) = {res}-0.2521{txt}{col 49}Prob > F{col 67}={col 73}{res}0.0000
+
+{txt}{ralign 81:(Std. err. adjusted for {res:367} clusters in {res:soc})}
+{hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 17}{c |}{col 29}    Robust
+{col 1}         lnwage{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
+{hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 11}risk {c |}{col 17}{res}{space 2}        0{col 29}{txt}  (omitted)
+{space 5}1.post2016 {c |}{col 17}{res}{space 2} .1350213{col 29}{space 2} .0209164{col 40}{space 1}    6.46{col 49}{space 3}0.000{col 57}{space 4} .0938899{col 70}{space 3} .1761527
+{txt}{space 15} {c |}
+post2016#c.risk {c |}
+{space 13}1  {c |}{col 17}{res}{space 2} .2047365{col 29}{space 2} .0283877{col 40}{space 1}    7.21{col 49}{space 3}0.000{col 57}{space 4} .1489131{col 70}{space 3} .2605599
+{txt}{space 15} {c |}
+{space 11}year {c |}
+{space 10}2015  {c |}{col 17}{res}{space 2} .0127013{col 29}{space 2} .0026966{col 40}{space 1}    4.71{col 49}{space 3}0.000{col 57}{space 4} .0073985{col 70}{space 3} .0180041
+{txt}{space 10}2016  {c |}{col 17}{res}{space 2}-.2002047{col 29}{space 2} .0119876{col 40}{space 1}  -16.70{col 49}{space 3}0.000{col 57}{space 4} -.223778{col 70}{space 3}-.1766315
+{txt}{space 10}2017  {c |}{col 17}{res}{space 2}-.1777368{col 29}{space 2} .0119072{col 40}{space 1}  -14.93{col 49}{space 3}0.000{col 57}{space 4} -.201152{col 70}{space 3}-.1543216
+{txt}{space 10}2018  {c |}{col 17}{res}{space 2}-.1510919{col 29}{space 2} .0117919{col 40}{space 1}  -12.81{col 49}{space 3}0.000{col 57}{space 4}-.1742803{col 70}{space 3}-.1279035
+{txt}{space 10}2019  {c |}{col 17}{res}{space 2}-.1263149{col 29}{space 2} .0113908{col 40}{space 1}  -11.09{col 49}{space 3}0.000{col 57}{space 4}-.1487146{col 70}{space 3}-.1039153
+{txt}{space 10}2020  {c |}{col 17}{res}{space 2}-.1338479{col 29}{space 2} .0118978{col 40}{space 1}  -11.25{col 49}{space 3}0.000{col 57}{space 4}-.1572445{col 70}{space 3}-.1104512
+{txt}{space 10}2021  {c |}{col 17}{res}{space 2}-.1143504{col 29}{space 2} .0052802{col 40}{space 1}  -21.66{col 49}{space 3}0.000{col 57}{space 4}-.1247337{col 70}{space 3}-.1039671
+{txt}{space 10}2022  {c |}{col 17}{res}{space 2}-.0638475{col 29}{space 2} .0039759{col 40}{space 1}  -16.06{col 49}{space 3}0.000{col 57}{space 4} -.071666{col 70}{space 3} -.056029
+{txt}{space 10}2023  {c |}{col 17}{res}{space 2}        0{col 29}{txt}  (omitted)
+{space 15} {c |}
+{space 10}_cons {c |}{col 17}{res}{space 2} 2.633584{col 29}{space 2}  .003731{col 40}{space 1}  705.86{col 49}{space 3}0.000{col 57}{space 4} 2.626247{col 70}{space 3}  2.64092
+{txt}{hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+        sigma_u {c |} {res} .36579184
+        {txt}sigma_e {c |} {res} .08481407
+            {txt}rho {c |} {res} .94898174{txt}   (fraction of variance due to u_i)
+{hline 16}{c BT}{hline 64}
+
+{com}. 
+. esttab using "output/main_table.rtf", se replace ///
+>       star(* 0.10 ** 0.05 *** 0.01) ///
+>       title("Effect of AI-automation risk on UK hourly wages, 2014-23")
+{res}{txt}{p 0 4 2}
+(file {bf}
+output/main_table.rtf{rm}
+not found)
+{p_end}
+{res}{txt}(output written to {browse  `"output/main_table.rtf"'})
+
+{com}. 
+. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}/Users/looloo/Desktop/master folder/output/empirical_log.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}24 May 2025, 19:52:41
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
