@@ -1,4 +1,4 @@
-# Automation Risk, Employment and Pay in UK Occupations, 2014–2020
+# Automation Exposure and the UK Labour Market: Employment, Pay and the Wage Floor, 2014–2020
 
 Replication materials for the working paper of that name by Louis Yiven Zhu (SSRN 5736503, revised September 2026).
 
