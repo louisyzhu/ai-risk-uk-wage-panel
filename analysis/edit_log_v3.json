@@ -1,0 +1,58 @@
+[
+ {
+  "old": "The pay identity holds to rounding rather than exactly because the pay panel is nearly balanced, with 2,546 of the $366 \\times 7 = 2{,}562$ possible cells present, whereas the employment panel used here is balanced by construction.",
+  "new": "The pay identity holds to rounding, not exactly, because the pay panel is nearly balanced, with 2,546 of the $366 \\times 7 = 2{,}562$ possible cells present, whereas the employment panel used here is balanced by construction."
+ },
+ {
+  "old": "so an occupation whose tenth percentile lies far above the floor receives a share of zero rather than a negative number.",
+  "new": "so an occupation whose tenth percentile lies far above the floor receives a share of zero where the linear extrapolation would return a negative number."
+ },
+ {
+  "old": "RQ3 is answered fully for employment and negatively for hours.",
+  "new": "RQ3 is answered in full for employment and negatively for hours."
+ },
+ {
+  "old": "The author used artificial-intelligence tools for reference checking, appendix preparation, formatting and coding assistance such as debugging; the author directed the research, reviewed all output and takes full responsibility for the content.",
+  "new": "The author used artificial-intelligence tools for reference checking, appendix preparation, formatting, and coding assistance such as debugging. The author directed the research, reviewed all output, and takes full responsibility for the content."
+ },
+ {
+  "old": "Appendix~\\ref{app:theory} sets out a framework in which a demand shift against automatable tasks, a binding wage floor and a within-occupation pay distribution produce exactly this pattern, derives the share of jobs below the floor as the first-order effect of a floor increase on occupational mean pay, and records one prediction the data do not support.",
+  "new": "Appendix~\\ref{app:theory} sets out a framework in which a demand shift against automatable tasks, a binding wage floor and a within-occupation pay distribution produce exactly this pattern. It derives the share of jobs below the floor as the first-order effect of a floor increase on occupational mean pay, and it records one prediction the data do not support."
+ },
+ {
+  "old": "The pay identity holds to rounding, not exactly, because the pay panel is nearly balanced,",
+  "new": "The pay identity holds to rounding because the pay panel is nearly balanced,"
+ },
+ {
+  "old": "Third, the 2020 release has an April reference date that falls in the first pandemic lockdown, when furloughed employees remained on payrolls and hours collapsed.",
+  "new": "Third, the 2020 release has an April reference date that falls in the first pandemic lockdown, when large numbers of employees were furloughed and hours fell sharply."
+ },
+ {
+  "old": "Panel A covers log mean gross hourly pay for 366 occupations and Panel B log employee jobs for the 309 occupations with a published count in every release.",
+  "new": "The left panel covers log mean gross hourly pay for 366 occupations and the right panel log employee jobs for the 309 occupations with a published count in every release."
+ },
+ {
+  "old": "The estimate in Table~\\ref{tab:nlw} column 2 is $0.164$ with a standard error of $0.017$, which is above the bound.",
+  "new": "The estimate in Table~\\ref{tab:nlw} column 2 is $0.164$ with a standard error of $0.017$, which is above the bound. Because the third branch of equation~\\eqref{eq:share} caps the share at the highest published rank, no occupation in the sample attains $F_i = 1$, and the comparison extrapolates the linear coefficient to that point."
+ },
+ {
+  "old": "Since $\\theta$ in equation~\\eqref{eq:nlw} is the coefficient on a demeaned share and the post-2016 indicator pools those five releases, the estimate of $\\theta$ extrapolated to $F_i = 1$ should be at least $0.090$.",
+  "new": "Since $\\theta$ in equation~\\eqref{eq:nlw} is the coefficient on a demeaned share and the post-2016 indicator pools those five releases, the estimate of $\\theta$ extrapolated to $F_i = 1$ should be at least $0.090$, provided that occupations with no jobs below the floor experience no floor-driven growth of their own."
+ },
+ {
+  "old": "The excess is what spillovers above the floor and composition would produce, and \\citet{giupponi2024minimum} document spillovers to roughly the twentieth percentile over these years.",
+  "new": "The excess is consistent with spillovers above the floor within exposed occupations, which \\citet{giupponi2024minimum} document up to roughly the twentieth percentile over these years, and with the composition term of Proposition~\\ref{prop:composition}. Spillovers that reached occupations with no jobs below the floor would work in the other direction, by raising the growth of the comparison group, so the bound is a benchmark and not a test."
+ },
+ {
+  "old": "so the bound is a benchmark and not a test.",
+  "new": "so the bound serves as a benchmark only."
+ },
+ {
+  "old": "Column 2 shows the same sequence with the floor share interacted with every release, at $+0.085$, $-0.241$, $-0.309$, $-0.446$, $-0.605$ and $-0.928$.",
+  "new": "Column 2 shows the same sequence with the floor share interacted with every release, at $+0.078$, $-0.228$, $-0.300$, $-0.444$, $-0.613$ and $-0.902$."
+ },
+ {
+  "old": "the probability ranges from 0.181 to 0.728 with a mean of 0.445 and a standard deviation of 0.145.",
+  "new": "the probability ranges from 0.181 to 0.728 with a mean of 0.446 and a standard deviation of 0.145."
+ }
+]

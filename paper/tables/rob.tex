@@ -1,0 +1,28 @@
+\begin{table}[!ht]\centering
+\caption{Alternative treatment definitions, time controls and cut-offs for log hourly pay}\label{tab:rob}
+\begin{threeparttable}\footnotesize\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lccc}\toprule
+Specification & Estimate & (s.e.) & 95\% confidence interval \\ \midrule
+\multicolumn{4}{l}{\emph{Panel A. Discrete treatment}} \\
+Above-median risk $\times$ post-2016 & 0.032 & (0.006) & [0.021, 0.043] \\
+Middle risk tercile $\times$ post-2016 & 0.010 & (0.007) & [-0.003, 0.024] \\
+Top risk tercile $\times$ post-2016 & 0.036 & (0.007) & [0.022, 0.049] \\
+\addlinespace
+\multicolumn{4}{l}{\emph{Panel B. Finer time controls}} \\
+Risk $\times$ post-2016, major group $\times$ release effects & 0.186 & (0.066) & [0.055, 0.316] \\
+Risk $\times$ post-2016, sub-major group $\times$ release effects & 0.227 & (0.084) & [0.062, 0.392] \\
+\addlinespace
+\multicolumn{4}{l}{\emph{Panel C. Alternative and placebo cut-offs}} \\
+Risk $\times$ post-2017 & 0.110 & (0.018) & [0.075, 0.145] \\
+Risk $\times$ post-2018 & 0.105 & (0.019) & [0.067, 0.143] \\
+Risk $\times$ post-2019 & 0.102 & (0.020) & [0.062, 0.141] \\
+Risk $\times$ post-2020 & 0.070 & (0.024) & [0.022, 0.117] \\
+\addlinespace
+Risk $\times$ post-2017, 2014--2019 releases only & 0.106 & (0.017) & [0.073, 0.140] \\
+Risk $\times$ post-2018, 2014--2019 releases only & 0.106 & (0.019) & [0.069, 0.143] \\
+\bottomrule\end{tabular}
+\begin{tablenotes}\footnotesize
+\item \emph{Notes:} Each row is a separate regression of log mean gross hourly pay on the stated interaction, estimated on the panel of 2,546 occupation-years unless the row restricts the releases. All columns include occupation and release fixed effects. unless the row names a finer time control. Risk terciles use cuts at 0.362 and 0.547 with the bottom tercile as the reference. Major groups are the nine one-digit SOC 2010 groups and sub-major groups the 25 two-digit groups. Standard errors clustered by occupation are reported in parentheses.
+A permutation test that reassigns the automation probabilities at random across the 366 occupations 2,000 times, holding the panel fixed, produces a largest placebo interaction of 0.072 in absolute value, against the estimate of 0.122 in Table~\ref{tab:pay}, with a permutation standard deviation of 0.020.
+\item \emph{Source:} ASHE Table 14, 2014--2020 releases, revised editions; ONS (2019) probability of automation.
+\end{tablenotes}\end{threeparttable}\end{table}

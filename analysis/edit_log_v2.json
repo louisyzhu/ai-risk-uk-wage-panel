@@ -1,0 +1,146 @@
+[
+ {
+  "old": "Whether technologies that can perform an occupation's tasks reduce employment or pay in that occupation is the central empirical question of the task-based literature, and the first years of commercial deep learning offer a window in which to ask it of artificial intelligence (AI) with the exposure measure a national statistical agency itself publishes.",
+  "new": "Whether technologies that can perform an occupation's tasks reduce employment or pay in that occupation is the central empirical question of the task-based literature. The first years of commercial deep learning offer a window in which to ask it of artificial intelligence (AI) with the exposure measure a national statistical agency itself publishes."
+ },
+ {
+  "old": "Task-displacement models predict that occupations whose tasks capital can take over lose labour demand, which shows up as lower relative employment, lower relative pay, or both, depending on how wages adjust \\citep{acemoglu2019automation, acemoglu2022tasks}.",
+  "new": "Task-displacement models predict that occupations whose tasks capital can take over lose labour demand, and the loss shows up as lower relative employment or lower relative pay depending on how wages adjust \\citep{acemoglu2019automation, acemoglu2022tasks}."
+ },
+ {
+  "old": "On the 309 occupations with a published jobs count in every release, log employee jobs regressed on the probability interacted with a post-2016 indicator, with occupation and release fixed effects, returns $-0.483$ (standard error 0.057, clustered by occupation).",
+  "new": "On the 309 occupations with a published jobs count in every release, log employee jobs regressed on the probability interacted with a post-2016 indicator returns $-0.483$ under occupation and release fixed effects (standard error 0.057, clustered by occupation)."
+ },
+ {
+  "old": "Relative to 2015, the 2014 coefficient is $+0.095$ (0.044), so more automatable occupations were gaining employment before the treatment date, and the coefficients then run $-0.243$, $-0.245$, $-0.324$, $-0.494$ and $-0.869$ from 2016 to 2020.",
+  "new": "Relative to 2015, the 2014 coefficient is $+0.095$ (0.044), so more automatable occupations were gaining employment before the treatment date. The coefficients then run $-0.243$, $-0.245$, $-0.324$, $-0.494$ and $-0.869$ from 2016 to 2020."
+ },
+ {
+  "old": "When the share of an occupation's jobs paid below \\pounds 7.20 in the 2015 release, the NLW rate of April 2016, is interacted with the post-2016 indicator, the pay coefficient falls from 0.132 (0.018) to 0.033 (0.021), and when the same share is allowed its own path in every release the pay event-study coefficients for 2016 to 2020 are $-0.002$, $0.003$, $0.023$, $0.051$ and $0.005$, none distinguishable from zero.",
+  "new": "The share of an occupation's jobs paid below \\pounds 7.20 in the 2015 release measures its exposure to the NLW rate of April 2016. Interacting that share with the post-2016 indicator lowers the pay coefficient from 0.132 (0.018) to 0.033 (0.021), and allowing the share its own path in every release leaves the pay event-study coefficients for 2016 to 2020 at $-0.002$, $0.003$, $0.023$, $0.051$ and $0.005$, none distinguishable from zero."
+ },
+ {
+  "old": "Read together, the two margins describe an occupational labour market in which more automatable occupations shed jobs after 2016 while the pay of those who remained was lifted by a rising floor and, in part, by the exit of the lowest-paid jobs.",
+  "new": "Read together, the two margins describe an occupational labour market in which more automatable occupations shed jobs after 2016 while a rising floor and the exit of the lowest-paid jobs lifted the pay of those who remained."
+ },
+ {
+  "old": "And it documents, in Section~\\ref{sec:soc} and Appendix~\\ref{app:soc}, that joining releases published on SOC 2020 to SOC 2010 risk scores by numeric code attaches the score to a different occupation for 125 of 261 matched codes, which manufactured the largest coefficients in the earlier version.",
+  "new": "It also documents in Section~\\ref{sec:soc} and Appendix~\\ref{app:soc} that joining releases published on SOC 2020 to SOC 2010 risk scores by numeric code attaches the score to a different occupation for 125 of 261 matched codes, and that this mismatch manufactured the largest coefficients in the earlier version."
+ },
+ {
+  "old": "The task-based tradition established that when capital acquires tasks previously performed by workers, automation reduces the labour share in value added and can reduce labour demand unless new tasks are created \\citep{acemoglu2019automation}, and that the reduction in demand shows up as lower relative pay in the occupations that lose tasks \\citep{acemoglu2022tasks}.",
+  "new": "The task-based tradition established that when capital acquires tasks previously performed by workers, automation reduces the labour share in value added and can reduce labour demand unless new tasks are created \\citep{acemoglu2019automation}. The reduction in demand then shows up as lower relative pay in the occupations that lose tasks \\citep{acemoglu2022tasks}."
+ },
+ {
+  "old": "For each occupation, the share of employee jobs paid below \\pounds 7.20, the NLW rate that took effect in April 2016, is interpolated from the published percentiles of the 2015 release, treating the pay distribution as piecewise linear between adjacent published percentiles (Appendix~\\ref{app:data} gives the formula and a worked example).",
+  "new": "For each occupation the share of employee jobs paid below \\pounds 7.20, the NLW rate that took effect in April 2016, is interpolated from the published percentiles of the 2015 release on the assumption that pay is distributed piecewise linearly between adjacent published percentiles (Appendix~\\ref{app:data} gives the formula and a worked example)."
+ },
+ {
+  "old": "Appendix~\\ref{app:theory}, Proposition~\\ref{prop:floor}, shows that the share of jobs below the floor is the first-order effect of a floor increase on an occupation's mean pay, holding the occupation's pay index and composition fixed, which is why the share is the appropriate regressor and why its coefficient has a structural reading.",
+  "new": "Proposition~\\ref{prop:floor} in Appendix~\\ref{app:theory} shows that the share of jobs below the floor is the first-order effect of a floor increase on an occupation's mean pay when the pay index and composition are held fixed, so the share is the appropriate regressor and its coefficient has a structural reading."
+ },
+ {
+  "old": "In column (1) the coefficient for 2014 is $-0.043$ (0.017), so the gradient was 0.043 log points steeper in 2014 than in 2015, and the coefficients for 2016 to 2020 are $0.051$ (0.014), $0.073$ (0.020), $0.101$ (0.023), $0.151$ (0.024) and $0.125$ (0.030).",
+  "new": "In column (1) the coefficient for 2014 is $-0.043$ (0.017), so the gradient was 0.043 log points steeper in 2014 than in 2015. The coefficients for 2016 to 2020 are $0.051$ (0.014), $0.073$ (0.020), $0.101$ (0.023), $0.151$ (0.024) and $0.125$ (0.030)."
+ },
+ {
+  "old": "The pay gradient became less negative after 2016, and the movement is the continuation of a compression already under way between the 2014 and 2015 releases, at a steady pace to 2019, with no break at the treatment date that the data can distinguish from zero.",
+  "new": "The pay gradient became less negative after 2016. The movement continues a compression already under way between the 2014 and 2015 releases at a steady pace to 2019, with no break at the treatment date that the data can distinguish from zero."
+ },
+ {
+  "old": "Column (3) of Table~\\ref{tab:espay} interacts the share with every release indicator, and the risk coefficients for 2016 to 2020 become $-0.002$ (0.018), $0.003$ (0.025), $0.023$ (0.028), $0.051$ (0.028) and $0.005$ (0.033), against $0.051$, $0.073$, $0.101$, $0.151$ and $0.125$ without the control.",
+  "new": "Column (3) of Table~\\ref{tab:espay} interacts the share with every release indicator. The risk coefficients for 2016 to 2020 then become $-0.002$ (0.018), $0.003$ (0.025), $0.023$ (0.028), $0.051$ (0.028) and $0.005$ (0.033), against $0.051$, $0.073$, $0.101$, $0.151$ and $0.125$ without the control."
+ },
+ {
+  "old": "Column (5) adds the floor-exposure interaction, and the risk coefficient is $-0.536$ (0.072) with the floor coefficient at $0.099$ (0.059), so exposure to the floor does not account for the employment loss and, if anything, occupations more exposed to the floor lost slightly less employment.",
+  "new": "Column (5) adds the floor-exposure interaction. The risk coefficient is $-0.536$ (0.072) with the floor coefficient at $0.099$ (0.059), so exposure to the floor does not account for the employment loss, and the point estimate suggests that occupations more exposed to the floor lost slightly less."
+ },
+ {
+  "old": "Table~\\ref{tab:trend}, columns (5) and (6), fits the trend-and-break model to employment; on 2014 to 2019 both terms carry weight, at $-0.083$ (0.021) for the trend and $-0.120$ (0.059) for the break, and the 2020 release, in which the pandemic reference date drives the largest drop, pushes the fit towards the trend.",
+  "new": "Columns (5) and (6) of Table~\\ref{tab:trend} fit the trend-and-break model to employment. On 2014 to 2019 both terms carry weight, at $-0.083$ (0.021) for the trend and $-0.120$ (0.059) for the break, whereas the 2020 release pushes the fit towards the trend because the pandemic reference date drives the largest drop."
+ },
+ {
+  "old": "Replacing release fixed effects with major-group-by-release effects, which allow each of the nine one-digit SOC groups its own pay path, gives $0.186$ (0.066), and sub-major-group-by-release effects across 25 two-digit groups give $0.227$ (0.084).",
+  "new": "Replacing release fixed effects with major-group-by-release effects, which allow each of the nine one-digit SOC groups its own pay path, gives $0.186$ (0.066). Sub-major-group-by-release effects across 25 two-digit groups give $0.227$ (0.084)."
+ },
+ {
+  "old": "Moving the treatment date to 2017, 2018, 2019 and 2020 gives $0.110$, $0.105$, $0.102$ and $0.070$ log points, and on the 2014 to 2019 releases alone placebo cut-offs at 2017 and 2018 return $0.106$ (0.017) and $0.106$ (0.019), the same as the 2016 estimate of $0.116$ on those releases.",
+  "new": "Moving the treatment date to 2017, 2018, 2019 and 2020 gives $0.110$, $0.105$, $0.102$ and $0.070$ log points. On the 2014 to 2019 releases alone, placebo cut-offs at 2017 and 2018 return $0.106$ (0.017) and $0.106$ (0.019), the same as the 2016 estimate of $0.116$ on those releases."
+ },
+ {
+  "old": "The permutation test reassigns the probabilities at random across occupations 2,000 times; the largest placebo interaction is $0.072$ in absolute value against the estimate of $0.122$, and the permutation standard deviation is $0.020$, so the association between the probability and pay dynamics is not an artefact of the panel structure.",
+  "new": "The permutation test reassigns the probabilities at random across occupations 2,000 times. The largest placebo interaction is $0.072$ in absolute value against the estimate of $0.122$ and the permutation standard deviation is $0.020$, so the association between the probability and pay dynamics is not an artefact of the panel structure."
+ },
+ {
+  "old": "With the mismatched releases included, the static pay interaction is $0.224$ (0.030) against $0.122$ (0.019) on the single-classification panel, and the event-study coefficients for 2021, 2022 and 2023 are $0.425$, $0.495$ and $0.521$, against a maximum of $0.151$ on the clean panel.",
+  "new": "With the mismatched releases included, the static pay interaction is $0.224$ (0.030) against $0.122$ (0.019) on the single-classification panel. The event-study coefficients for 2021, 2022 and 2023 are $0.425$, $0.495$ and $0.521$, against a maximum of $0.151$ on the clean panel."
+ },
+ {
+  "old": "First, the design has no measure of technology adoption and no date at which adoption began, so the paper cannot estimate a causal effect of AI on either margin; it can establish that the probability predicts relative employment loss with a break at 2016 and no pre-trend of the same sign, and that it predicts relative pay growth only through the level of pay.",
+  "new": "First, the design has no measure of technology adoption and no date at which adoption began, so the paper cannot estimate a causal effect of AI on either margin. It can establish that the probability predicts relative employment loss with a break at 2016 and no pre-trend of the same sign, and that it predicts relative pay growth only through the level of pay."
+ },
+ {
+  "old": "Second, the employment outcome is the published count of employee jobs from a 1\\% sample, with small counts suppressed, so the balanced employment panel covers 309 of 366 occupations and the excluded occupations are small; the unweighted and weighted estimates and the unbalanced estimate agree in sign and magnitude, which limits the concern without removing it.",
+  "new": "Second, the employment outcome is the published count of employee jobs from a 1\\% sample with small counts suppressed, so the balanced employment panel covers 309 of 366 occupations and the excluded occupations are small. The unweighted, weighted and unbalanced estimates agree in sign and magnitude, which limits the concern without removing it."
+ },
+ {
+  "old": "Third, the 2020 release has an April reference date that falls in the first pandemic lockdown, when furloughed employees remained on payrolls and hours collapsed, so the 2020 coefficients for employment and hours carry a shock unrelated to automation, and the 2014 to 2019 estimates carry the paper's conclusions on timing.",
+  "new": "Third, the 2020 release has an April reference date that falls in the first pandemic lockdown, when furloughed employees remained on payrolls and hours collapsed. The 2020 coefficients for employment and hours therefore carry a shock unrelated to automation, and the 2014 to 2019 estimates carry the paper's conclusions on timing."
+ },
+ {
+  "old": "Sixth, the probability is a 2017 measure that predates large language models and, as \\citet{arntz2017revisiting} show, occupation-level probabilities overstate task-level risk, so the measure is a noisy proxy for exposure to the technology now diffusing.",
+  "new": "Sixth, the probability is a 2017 measure that predates large language models. \\citet{arntz2017revisiting} show that occupation-level probabilities overstate task-level risk, so the measure is a noisy proxy for exposure to the technology now diffusing."
+ },
+ {
+  "old": "And the design transfers to newer exposure measures, since the AI Occupational Exposure index of \\citet{felten2021occupational} and the language-model exposure of \\citet{eloundou2024gpts} both rise with pay, so the same conditioning on the floor is the first check any UK application of them should run, and the employment margin is where the check should look first.",
+  "new": "The design also transfers to newer exposure measures. The AI Occupational Exposure index of \\citet{felten2021occupational} and the language-model exposure of \\citet{eloundou2024gpts} both rise with pay, so conditioning on the floor is the first check any UK application of them should run, and the employment margin is where the check should look first."
+ },
+ {
+  "old": "The author used Claude (Anthropic) to rebuild the panel from the raw ONS workbooks, to run the estimation pipeline in Python, to generate the tables from the resulting estimates, to draft and edit the text of this version under the author's direction, and, through a second instance, to render the figures from the archived estimates and to verify the bibliographic records; the author verified the rebuilt panel against the archived Stata output cell by cell and takes full responsibility for the content.",
+  "new": "The author used Claude (Anthropic) to rebuild the panel from the raw ONS workbooks, to run the estimation pipeline in Python, to generate the tables from the resulting estimates, and to draft and edit the text of this version under the author's direction. A second instance rendered the figures from the archived estimates and verified the bibliographic records. The author verified the rebuilt panel against the archived Stata output cell by cell and takes full responsibility for the content."
+ },
+ {
+  "old": "With the floor, the wage index cannot fall below the level at which the floor binds for the marginal job, so for occupations where the floor binds the adjustment falls on employment, and the observed mean of pay need not fall.",
+  "new": "With the floor, the wage index cannot fall below the level at which the floor binds for the marginal job. For occupations where the floor binds the adjustment therefore falls on employment, and the observed mean of pay need not fall."
+ },
+ {
+  "old": "A floor increase of $\\Delta \\bar w$ raises an occupation's mean pay by approximately $F_i \\Delta \\bar w$, so a regression of the change in log mean pay on $F_i$, with $F_i$ measured before the increase, has a coefficient with a structural reading, namely the floor increase scaled by mean pay. The NLW rose by 7.5\\% at introduction and by between 4.2\\% and 6.2\\% in each subsequent April to 2020, and the estimate of $\\theta$ in Table~\\ref{tab:nlw} column (2), 0.164 for a unit change in $F_i$ over the post-2016 average, is of the order that cumulative upratings of that size imply for an occupation whose whole workforce sat at the floor.",
+  "new": "A floor increase of $\\Delta \\bar w$ raises an occupation's mean pay by approximately $F_i \\Delta \\bar w$. A regression of the change in log mean pay on $F_i$ measured before the increase therefore has a coefficient with a structural reading, namely the log rise in the floor for an occupation whose entire workforce sat at it. The adult minimum wage in force at the April 2015 reference date was \\pounds 6.50, and the average across the 2016 to 2020 rates of the log ratio of the NLW to that level is 0.192. The first-order formula overstates the rise for jobs paid between the old and new floors, so the predicted coefficient at $F_i = 1$ lies at or below 0.192, and the estimate of $\\theta$ in Table~\\ref{tab:nlw} column (2), 0.164, sits within that range."
+ },
+ {
+  "old": "The 2015 to 2019 changes in Section~\\ref{sec:results}, in which employment fell and mean pay rose in the same occupations, are what this identity produces when exit is concentrated at the bottom; the published series do not separate the two terms, and the microdata would.",
+  "new": "The 2015 to 2019 changes in Section~\\ref{sec:results}, in which employment fell and mean pay rose in the same occupations, are what this identity produces when exit is concentrated at the bottom. The published series do not separate the two terms, and the microdata would."
+ },
+ {
+  "old": "With one pre-treatment release, $\\gamma$ is identified from the slope across all releases and $\\delta$ from the departure of the post-2016 coefficients from the line through the two pre-treatment points, so the break is estimated with the precision of a single pre-period contrast, which is why its standard error in Table~\\ref{tab:trend} is three times that of the trend.",
+  "new": "With one pre-treatment release, $\\gamma$ is identified from the slope across all releases and $\\delta$ from the departure of the post-2016 coefficients from the line through the two pre-treatment points. The break is therefore estimated with the precision of a single pre-period contrast, which is why its standard error in Table~\\ref{tab:trend} is three times that of the trend."
+ },
+ {
+  "old": "Medical practitioners, code 2211, have a 10th percentile of \\pounds 15.54 and a 20th of \\pounds 20.19, so the threshold lies below the lowest published percentile, the extrapolated rank is $10 - 10 \\times (15.54 - 7.20)/(20.19 - 15.54) < 0$, and $F_i = 0$.",
+  "new": "Medical practitioners, code 2211, have a 10th percentile of \\pounds 15.54 and a 20th of \\pounds 20.19. The threshold lies below the lowest published percentile, the extrapolated rank $10 - 10 \\times (15.54 - 7.20)/(20.19 - 15.54)$ is negative, and $F_i = 0$."
+ },
+ {
+  "old": "Panel A demeans the occupation's 2014 log mean pay, excludes the 2014 release, and interacts the demeaned level with the post-2016 indicator; the pay interaction falls from 0.100 (0.018) to $-0.015$ (0.037), with the pay-level coefficient at $-0.054$ (0.018).",
+  "new": "Panel A demeans the occupation's 2014 log mean pay, excludes the 2014 release, and interacts the demeaned level with the post-2016 indicator. The pay interaction falls from 0.100 (0.018) to $-0.015$ (0.037), with the pay-level coefficient at $-0.054$ (0.018)."
+ },
+ {
+  "old": "The rebuilt panel reproduces the archived Stata panel of the earlier version for every 2014 to 2020 cell, and the static pay interaction on those releases, 0.122 (0.019), reproduces the earlier version's own estimate on the same releases.",
+  "new": "The rebuilt panel reproduces the archived Stata panel of the earlier version for every 2014 to 2020 cell. The static pay interaction on those releases, 0.122 (0.019), reproduces the earlier version's own estimate on the same releases."
+ },
+ {
+  "old": "log employee jobs in an occupation one standard deviation more automatable were 7.2\\% lower by 2019, with a break at 2016",
+  "new": "log employee jobs in an occupation one standard deviation more automatable were 7.2 log points lower by 2019, with a break at 2016"
+ },
+ {
+  "old": "An occupation one standard deviation more automatable, where the standard deviation of the probability is 0.145, therefore had employment about 7.0\\% lower after 2016 relative to before.",
+  "new": "An occupation one standard deviation more automatable, where the standard deviation of the probability is 0.145, therefore had employment about 7.0 log points lower after 2016 relative to before, or 6.8\\%."
+ },
+ {
+  "old": "An occupation one standard deviation more automatable therefore had employment about 7.0\\% lower after 2016 relative to before, conditional on occupation and release effects.",
+  "new": "An occupation one standard deviation more automatable therefore had employment about 7.0 log points lower after 2016 relative to before, or 6.8\\%, conditional on occupation and release effects."
+ },
+ {
+  "old": "Log employee jobs in an occupation one standard deviation more automatable fell by about 7\\% relative to others after 2016,",
+  "new": "Log employee jobs in an occupation one standard deviation more automatable fell by about 7 log points relative to others after 2016,"
+ }
+]

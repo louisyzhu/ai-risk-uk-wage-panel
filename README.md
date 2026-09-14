@@ -1,90 +1,51 @@
-# AI Risk and UK Wages: An Occupation-Year Panel
+# Automation Risk, Employment and Pay in UK Occupations, 2014–2020
 
-Did occupations more exposed to automation see their wages diverge from less exposed ones after
-2016? This builds a UK occupation-year panel of mean hourly pay from 2014 to 2023, merges an
-automation-risk score onto each occupation, and estimates a fixed-effects specification with an
-interaction between risk and the post-2016 period.
+Replication materials for the working paper of that name by Louis Yiven Zhu (SSRN 5736503, revised September 2026).
 
-STATA. Occupation and year fixed effects, standard errors clustered by occupation.
+The paper joins the ONS probability of automation to seven ASHE Table 14 releases on the SOC 2010 classification and follows mean hourly pay, employee jobs and paid hours across 366 four-digit occupations. Employment in more automatable occupations fell after 2016 with a break at the treatment date. Mean pay rose along a path that began before 2016 and that exposure to the National Living Wage accounts for.
 
-## Design
+## Relationship to the December 2025 version
 
-The panel is occupation by year, keyed on SOC code (`xtset soc year`). The outcome is log mean
-hourly pay. The regressor of interest is an automation-risk probability interacted with a post-2016
-indicator:
+The December 2025 version covered 2014 to 2023 and read a positive post-2016 interaction between automation risk and pay as evidence of augmentation. That reading is withdrawn. The 2021 to 2023 ASHE releases are published on SOC 2020, and joining them to SOC 2010 risk scores by numeric code attaches the score to a different occupation for 125 of the 261 codes present in both classifications. The revised paper covers 2014 to 2020 on a single classification, adds employment and hours, and reaches the opposite conclusion on the labour-market story. Appendix E of the paper lists every withdrawn claim.
 
-```stata
-xtreg lnwage c.risk##i.post2016 i.year, fe cluster(soc)
-```
+The files behind the December 2025 version remain in this repository at the tag `v1-ssrn-dec2025`, namely `empirical.do`, `data_work/panel.dta` and `output/`. They are kept because the revised paper states that the rebuilt panel reproduces the archived one cell for cell, and that claim should be checkable.
 
-Automation risk is a property of the occupation and does not vary over time, so occupation fixed
-effects absorb its main effect entirely. STATA reports it as omitted for collinearity, which is the
-expected behaviour. All the identifying variation sits in the interaction: it asks whether the
-gradient between risk and pay shifted after 2016, not what the level of that gradient is.
+## What is here
 
-## Result
+| Path | Contents |
+|---|---|
+| `paper/` | `main.tex`, `main.pdf`, and the `tables/` and `figures/` the build reads |
+| `analysis/` | The pipeline: panel build, estimation, table generation, figure-data export |
+| `analysis/locked_numbers_v2.json` | Every estimate the paper reports, in one file |
+| `build/` | The extracted occupation-year panels and the workbook provenance tables |
+| `figures/` | Figure scripts, `paperstyle.py`, the data each figure reads, and the rendered PDF, SVG and PNG |
+| `scripts/` | One-command download of the raw ASHE workbooks, and a manual fallback |
+| `data_work/risk.dta` | The ONS probability of automation, 369 SOC 2010 unit groups |
+| `empirical.do`, `output/` | The December 2025 Stata pipeline and its logs, retained for comparison |
 
-From the committed log, 367 occupations and 3,255 occupation-year observations, within R² = 0.368:
+## Rebuilding from the raw files
 
-| Term | Coefficient | Robust SE | t | 95% CI |
-|---|---:|---:|---:|---|
-| `post2016` | 0.135 | 0.021 | 6.46 | [0.094, 0.176] |
-| `post2016 × risk` | **0.205** | 0.028 | 7.21 | [0.149, 0.261] |
-| `risk` | omitted (absorbed by occupation FE) | | | |
+The ten ASHE zip archives are not committed because of their size. Everything else needed is here.
 
-**The interaction is positive**, and precisely estimated. Relative to the pre-2016 period,
-higher-automation-risk occupations show *higher* log pay after 2016 than lower-risk ones. Across the
-full range of the risk score the implied gap is about 0.2 log points.
+1. **Download the raw workbooks.** From the repository root, run `bash scripts/get_ashe_files.sh` on macOS or Linux, or `scripts/get_ashe_files.ps1` on Windows. If the ONS reorganises its dataset page, `scripts/HOW_TO_GET_ONS_FILES.md` gives the manual click-through route.
+2. **Unpack them.** Each of the ten zips should be extracted into its own folder under `raw/ex/`, named after the zip. For example `ashe_2015.zip` extracts to `raw/ex/table142015revised/`. The folder names the build script expects are listed in the `YEAR_DIR` dictionary at the top of `analysis/build_panel.py`.
+3. **Build the panel.** `python analysis/build_panel.py` writes `build/*_raw.csv` and the provenance tables.
+4. **Estimate.** `python analysis/run3.py` then `python analysis/run4.py` write `analysis/locked_numbers_v2.json`. The permutation test uses seed 20260912.
+5. **Export the figure data.** `python analysis/export_figure_data.py` writes the four figure CSVs from the locked estimates. Run this after any change to the locked file, so the figures cannot drift from the tables.
+6. **Generate the tables.** `python analysis/make_tables_v3.py` writes every table in `paper/tables/` from the locked estimates. No number in the paper is typed by hand.
+7. **Render the figures.** Run the three scripts in `figures/`. They require Helvetica or Arial and stop with an error rather than falling back to a serif font, which is deliberate.
+8. **Compile.** `cd paper && latexmk -pdf main.tex`.
 
-That sign runs against the simple prior that exposure to automation depresses pay in exposed
-occupations. Read it carefully. This is a descriptive panel association, not a causal estimate.
-There is no instrument, no control group that is unexposed by design, and no attempt to separate
-automation from anything else that moved differentially across occupations after 2016. Composition
-within occupation is unobserved here, so a rising mean can reflect who remains in an occupation as
-much as what those people are paid. The estimate is a fact about the data that wants explaining,
-not an answer.
+Steps 3 to 8 take a few minutes. Step 1 downloads roughly 80 MB.
 
-## What is in this repository
+## Requirements
 
-```
-├── empirical.do              # The full pipeline: build, estimate, robustness, descriptives, figure
-├── data_work/panel.dta       # The built occupation-year panel
-├── data_work/risk.dta        # Automation-risk scores by SOC
-└── output/                   # Tables, the trend graph, and the STATA log
-```
+Python 3.11 or later with `pandas`, `numpy`, `pyfixest` 0.60, `statsmodels`, `xlrd`, `openpyxl` and `matplotlib` 3.11. A TeX distribution with `lmodern`, `booktabs`, `threeparttable`, `natbib` and `microtype`.
 
-The raw inputs are **not** committed. `empirical.do` section 0 builds the panel from `ashe_YYYY.xls`
-files for 2014 to 2023 and from `Automation risk by occupation.xlsx`, neither of which is in the
-repository. The script is written to skip that rebuild when `data_work/panel.dta` already exists,
-which it does, so the estimation runs from the committed panel.
+## Data sources
 
-## Running it
+Annual Survey of Hours and Earnings, Table 14, occupation by four-digit SOC 2010, revised editions for the 2014 to 2023 releases, Office for National Statistics. Probability of automation by occupation, Office for National Statistics, 2019. Both are public. The analysis uses published aggregate statistics only.
 
-Two things need changing first.
+## Licence
 
-1. `empirical.do` line 6 hard-codes `cd "~/Desktop/master folder"`. Point it at wherever you cloned
-   this instead. Nothing else in the script uses an absolute path.
-2. Estimation needs `estout` for the `esttab` calls. Install with `ssc install estout`.
-
-Then run the script from STATA. It writes tables and the trend figure into `output/`.
-
-## Known gaps
-
-Worth stating plainly, because a reader comparing the script against `output/` will notice.
-
-- **The committed log predates the current script.** `output/empirical_log.smcl` was written on
-  24 May 2025 and contains only the baseline regression. The robustness specification that drops
-  the pandemic years, the descriptive statistics table, and the trend figure were all added to
-  `empirical.do` afterwards, so no committed log covers them. The result table above is the baseline
-  only.
-- **Output filenames have drifted.** The script writes `Table2_FE.rtf`, `Table1_descstats.txt` and
-  `Figure1_trend.png`. What is committed is `Table2_AI.rtf`, `Table_FE.rtf`, `main_table.rtf` and
-  `Trend.gph`. The committed outputs come from earlier runs under different names. Re-running
-  produces the script's names, not these.
-- **The robustness check is unreported.** Dropping 2020 to 2022 is in the script but its result has
-  never been recorded anywhere in this repository. That is the first thing to run if anyone picks
-  this up.
-
----
-
-Originally submitted as coursework. Retained because the question stands on its own.
+Code is released under the MIT Licence. The ONS source data are subject to the Open Government Licence.

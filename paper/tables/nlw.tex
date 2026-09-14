@@ -1,0 +1,19 @@
+\begin{table}[!ht]\centering
+\caption{The post-2016 pay gradient conditional on exposure to the National Living Wage}\label{tab:nlw}
+\begin{threeparttable}\footnotesize\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lccccc}\toprule
+ & (1) & (2) & (3) & (4) & (5) \\
+Exposure measure & None & Share below floor & Share below floor & Kaitz index & Kaitz index \\ \midrule
+Risk $\times$ post & 0.132 & 0.033 & 0.025 & -0.047 & -0.025 \\
+ & (0.018) & (0.021) & (0.026) & (0.031) & (0.033) \\
+Exposure $\times$ post &  & 0.164 & 0.233 & 0.154 & -0.008 \\
+ &  & (0.017) & (0.133) & (0.026) & (0.065) \\
+Risk $\times$ exposure $\times$ post &  &  & -0.108 &  & 0.326 \\
+ &  &  & (0.197) &  & (0.103) \\ \addlinespace
+Occupation-years & 2,426 & 2,426 & 2,426 & 2,426 & 2,426 \\
+Occupations & 347 & 347 & 347 & 347 & 347 \\
+\bottomrule\end{tabular}
+\begin{tablenotes}\footnotesize
+\item \emph{Notes:} Estimates of equation (4) on the 347 occupations for which the 2015 percentiles allow the exposure share to be computed. The dependent variable is log mean gross hourly pay. The share below the floor is the interpolated share of the occupation's employee jobs paid below \pounds 7.20 in the 2015 release; the Kaitz index is \pounds 7.20 divided by the occupation's 2015 median hourly pay. Both are demeaned across occupations, so the coefficient on risk in columns 3 and 5 is evaluated at mean exposure. The exposure share correlates 0.60 and the Kaitz index 0.82 with the automation probability. All columns include occupation and release fixed effects. Standard errors clustered by occupation are reported in parentheses.
+\item \emph{Source:} ASHE Table 14, 2014--2020 releases, revised editions; ONS (2019) probability of automation.
+\end{tablenotes}\end{threeparttable}\end{table}

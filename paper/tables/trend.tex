@@ -1,0 +1,18 @@
+\begin{table}[!ht]\centering
+\caption{Linear trend or break at 2016 in the automation-risk gradient}\label{tab:trend}
+\begin{threeparttable}\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lcccccc}\toprule
+ & (1) & (2) & (3) & (4) & (5) & (6) \\
+Dependent variable & Pay & Pay & Pay & Pay & Jobs & Jobs \\
+Releases & 2014--19 & 2014--19 & 2014--20 & 2014--20 & 2014--19 & 2014--20 \\ \midrule
+Risk $\times$ (year $-$ 2015) & 0.037 & 0.034 & 0.031 & 0.024 & -0.083 & -0.146 \\
+ & (0.006) & (0.007) & (0.005) & (0.007) & (0.021) & (0.018) \\
+Risk $\times$ post-2016 & -- & 0.015 & -- & 0.039 & -0.120 & 0.036 \\
+ &  & (0.020) &  & (0.021) & (0.059) & (0.063) \\ \addlinespace
+Occupation-years & 2,184 & 2,184 & 2,546 & 2,546 & 1,842 & 2,149 \\
+Occupations & 366 & 366 & 366 & 366 & 307 & 307 \\
+\bottomrule\end{tabular}
+\begin{tablenotes}\footnotesize
+\item \emph{Notes:} Estimates of equation (3). The trend term lets the risk gradient move linearly in calendar time and the break term adds a level shift from 2016. Pay is log mean gross hourly pay on the full panel; jobs is log employee jobs on the balanced panel of 309 occupations with a published count in every release. All columns include occupation and release fixed effects. Standard errors clustered by occupation are reported in parentheses.
+\item \emph{Source:} ASHE Table 14, 2014--2020 releases, revised editions; ONS (2019) probability of automation.
+\end{tablenotes}\end{threeparttable}\end{table}

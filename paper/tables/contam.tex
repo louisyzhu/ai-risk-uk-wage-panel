@@ -1,0 +1,25 @@
+\begin{table}[!ht]\centering
+\caption{Pay event study with and without the mismatched 2021--2023 releases}\label{tab:contam}
+\begin{threeparttable}\footnotesize\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcccc}\toprule
+ & \multicolumn{2}{c}{SOC 2010 releases only} & \multicolumn{2}{c}{SOC 2020 releases joined by code} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Release & $\hat{\beta}_{s}$ & (s.e.) & $\hat{\beta}_{s}$ & (s.e.) \\ \midrule
+2014 & -0.043 & (0.017) & -0.043 & (0.017) \\
+2015 & 0 (ref.) &  & 0 (ref.) &  \\
+2016 & 0.051 & (0.014) & 0.050 & (0.014) \\
+2017 & 0.073 & (0.020) & 0.072 & (0.020) \\
+2018 & 0.101 & (0.023) & 0.100 & (0.023) \\
+2019 & 0.151 & (0.024) & 0.151 & (0.024) \\
+2020 & 0.125 & (0.030) & 0.128 & (0.030) \\
+2021 & -- &  & 0.425 & (0.082) \\
+2022 & -- &  & 0.495 & (0.081) \\
+2023 & -- &  & 0.521 & (0.086) \\
+\addlinespace
+Risk $\times$ post-2016 & 0.122 & (0.019) & 0.224 & (0.030) \\
+Occupation-years & \multicolumn{2}{c}{2,546} & \multicolumn{2}{c}{3,321} \\
+\bottomrule\end{tabular}
+\begin{tablenotes}\footnotesize
+\item \emph{Notes:} The dependent variable is log mean gross hourly pay. The right-hand columns reproduce the design of the earlier version of this paper, in which the 2021 to 2023 releases, published on SOC 2020, were joined to SOC 2010 automation probabilities by numeric code. All columns include occupation and release fixed effects. Standard errors clustered by occupation are reported in parentheses.
+\item \emph{Source:} ASHE Table 14, 2014--2020 releases, revised editions; ONS (2019) probability of automation.
+\end{tablenotes}\end{threeparttable}\end{table}

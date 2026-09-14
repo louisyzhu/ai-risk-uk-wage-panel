@@ -1,0 +1,26 @@
+\begin{table}[!ht]\centering
+\caption{The post-2016 pay gradient by level of 2014 pay}\label{tab:paylevel}
+\begin{threeparttable}\footnotesize\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcccc}\toprule
+Sample or specification & Risk $\times$ post & (s.e.) & Occ.-years & Occupations \\ \midrule
+\multicolumn{5}{l}{\emph{Panel A. Conditioning on demeaned log 2014 pay, releases 2015--2020}} \\
+Risk $\times$ post alone & 0.100 & (0.018) & 2,175 & 364 \\
+Adding log 2014 pay $\times$ post & -0.015 & (0.037) & 2,175 & 364 \\
+\quad coefficient on log 2014 pay $\times$ post & -0.054 & (0.018) & & \\
+\addlinespace
+\multicolumn{5}{l}{\emph{Panel B. Within terciles of 2014 mean hourly pay, releases 2015--2020}} \\
+Bottom third of 2014 pay (\pounds6.74--11.17) & 0.104 & (0.042) & 725 & 121 \\
+Middle third of 2014 pay (\pounds11.20--15.70) & 0.036 & (0.043) & 727 & 122 \\
+Top third of 2014 pay (\pounds15.84--53.14) & 0.087 & (0.059) & 723 & 121 \\
+\addlinespace
+\multicolumn{5}{l}{\emph{Panel C. Dropping low-paid occupations, releases 2014--2020}} \\
+2015 mean pay of \pounds8 or more & 0.101 & (0.019) & 2,466 & 354 \\
+2015 mean pay of \pounds9 or more & 0.062 & (0.020) & 2,263 & 325 \\
+2015 mean pay of \pounds10 or more & 0.040 & (0.021) & 2,046 & 294 \\
+2015 mean pay of \pounds11 or more & 0.021 & (0.025) & 1,794 & 258 \\
+2015 mean pay of \pounds12 or more & -0.017 & (0.032) & 1,542 & 222 \\
+\bottomrule\end{tabular}
+\begin{tablenotes}\footnotesize
+\item \emph{Notes:} The dependent variable is log mean gross hourly pay. Panel A demeans the occupation's log mean pay in the 2014 release across occupations and excludes that release from estimation, so the conditioning variable is predetermined. The occupation-level correlation between the automation probability and log 2014 pay is -0.80. All columns include occupation and release fixed effects. Standard errors clustered by occupation are reported in parentheses.
+\item \emph{Source:} ASHE Table 14, 2014--2020 releases, revised editions; ONS (2019) probability of automation.
+\end{tablenotes}\end{threeparttable}\end{table}

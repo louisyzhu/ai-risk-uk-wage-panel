@@ -1,0 +1,22 @@
+\begin{table}[!ht]\centering
+\caption{Event-study estimates for log mean hourly pay, relative to 2015}\label{tab:espay}
+\begin{threeparttable}\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lcccccc}\toprule
+ & \multicolumn{2}{c}{(1) Unweighted} & \multicolumn{2}{c}{(2) Employment-weighted} & \multicolumn{2}{c}{(3) Floor exposure controlled} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+Release & $\hat{\beta}_{s}$ & (s.e.) & $\hat{\beta}_{s}$ & (s.e.) & $\hat{\beta}_{s}$ & (s.e.) \\ \midrule
+2014 & -0.043 & (0.017) & -0.063 & (0.009) & -0.034 & (0.020) \\
+2015 & 0 (ref.) &  & 0 (ref.) &  & 0 (ref.) &  \\
+2016 & 0.051 & (0.014) & 0.070 & (0.016) & -0.002 & (0.018) \\
+2017 & 0.073 & (0.020) & 0.107 & (0.019) & 0.003 & (0.025) \\
+2018 & 0.101 & (0.023) & 0.155 & (0.023) & 0.023 & (0.028) \\
+2019 & 0.151 & (0.024) & 0.219 & (0.031) & 0.051 & (0.028) \\
+2020 & 0.125 & (0.030) & 0.233 & (0.041) & 0.005 & (0.033) \\
+\addlinespace
+Occupation-years & \multicolumn{2}{c}{2,546} & \multicolumn{2}{c}{2,329} & \multicolumn{2}{c}{2,426} \\
+Occupations & \multicolumn{2}{c}{366} & \multicolumn{2}{c}{333} & \multicolumn{2}{c}{347} \\
+\bottomrule\end{tabular}
+\begin{tablenotes}\footnotesize
+\item \emph{Notes:} Estimates of $\beta_{s}$ in equation (2), the interaction between the automation probability and a release indicator, with 2015 omitted. Column 2 weights by 2015 employee jobs. Column 3 adds the interaction between the 2015 share of jobs paid below \pounds 7.20 and each release indicator, so the reported coefficients are net of a floor-exposure path that is free to differ by release. A positive coefficient means the cross-occupation slope of log pay on the probability was less negative in that release than in 2015. All columns include occupation and release fixed effects. Standard errors clustered by occupation are reported in parentheses.
+\item \emph{Source:} ASHE Table 14, 2014--2020 releases, revised editions; ONS (2019) probability of automation.
+\end{tablenotes}\end{threeparttable}\end{table}
